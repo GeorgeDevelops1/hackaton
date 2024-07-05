@@ -1,0 +1,25 @@
+<div class="container">
+    <header>
+        <h1>Your Shopping Cart</h1>
+        <div class="shopping" (click)="openShopping()">
+            <img src="image/shopping.svg">
+            <span class="quantity">{{ cartItems.length }}</span>
+        </div>
+    </header>
+
+    <div class="list">
+       
+    </div>
+</div>
+<div class="card" ngIf="isCartOpen">
+    <h1>Card</h1>
+    <ul class="listCard">
+        <li ngFor="let item of cartItems">
+            
+        </li>
+    </ul>
+    <div class="checkOut">
+        <div class="total">{{ totalAmount }}</div>
+        <div class="closeShopping" (click)="closeShopping()">Close</div>
+    </div>
+</div>

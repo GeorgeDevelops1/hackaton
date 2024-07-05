@@ -1,0 +1,31 @@
+<app-header></app-header>
+<app-contact-form [isOpen]="isContactOpen" (close)="ContactClose()"></app-contact-form>
+
+<main>
+    <div class="middleContainer">
+        <div class="mainBubble">
+            <img width="100%" src="assets/images/Food.png" alt="">
+        </div>
+        <div class="aroundBubbles">
+            <div class="item1 item">
+                <img width="100%" src="assets/images/honey.png" alt="honey image">
+            </div>
+            <div class="item2 item">
+                <img width="100%" src="assets/images/milk.png" alt="milk images">
+            </div>
+            <div class="item3 item">
+                <img width="100%" src="assets/images/nuts.png" alt="nuts image">
+            </div>
+            <div class="item4 item">
+                <img width="100%" src="assets/images/vegetables.png" alt="vegetable image">
+            </div>
+            <div class="item5 item">
+                <img width="100%" src="assets/images/fruit.png" alt="fruits image">
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <button (click)="ContactOpen()">Contact Us</button>
+</footer>

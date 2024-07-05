@@ -1,0 +1,13 @@
+<!-- contact-form.component.html -->
+<main *ngIf="isOpen">
+    <div class="formContainer">
+        <i (click)="onContactClose()" class="fa-solid fa-x"></i>
+        <form action="" method="post">
+            <h1>Contact us</h1>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+            <input type="text" name="number" id="number" placeholder="Enter your number" required>
+            <textarea name="message" placeholder="How can we help you" id="message" cols="30" rows="10"></textarea>
+        </form>
+    </div>
+</main>

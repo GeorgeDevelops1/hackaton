@@ -1,0 +1,110 @@
+main{
+    background: rgb(77,235,140);
+    background: linear-gradient(180deg, rgba(77,235,140,1) 2%, rgba(151,255,141,1) 49%, rgba(53,185,40,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85svh;
+}
+
+.middleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+.mainBubble{
+    width: 150px;
+    height: 150px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+
+.item{
+    background-color: whitesmoke;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.item:hover{
+    scale: 1.2;
+}
+
+/* .item::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgba(118, 134, 71, .7);
+    opacity: 0;
+    transition: .4s;
+} */
+
+/* .item:hover::before{
+    opacity: 1;
+} */
+
+.item1{
+    top: 25%;
+    left: 10%;
+}
+
+.item2{
+    top: 6%;
+    left: 45%;
+}
+
+.item3{
+    bottom: 18%;
+    left: 12%;
+}
+
+.item4{
+    bottom: 10%;
+    right: 25%;
+}
+
+.item5{
+    bottom: 40%;
+    right: 5%;
+}
+
+img{
+    border-radius: 50%;
+}
+
+footer{
+    height: 8svh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+}
+
+footer button{
+    margin: 1rem;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #8b9a63;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .4s;
+}
+
+footer button:hover{
+    background-color: #667f46;
+}
